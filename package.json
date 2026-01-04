@@ -3,7 +3,7 @@
   "displayName": "Remote Debug Server",
   "description": "Start VS Code debugging via TCP socket on port 9999",
   "version": "1.0.0",
-  "publisher": "your-publisher-name",
+  "publisher": "vb000",
   "repository": {
     "type": "git",
     "url": "https://github.com/vb000/vscode-remote-debug-server"
