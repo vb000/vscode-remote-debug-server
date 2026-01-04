@@ -1,0 +1,40 @@
+{
+  "name": "remote-debug-server",
+  "displayName": "Remote Debug Server",
+  "description": "Start VS Code debugging via TCP socket on port 9999",
+  "version": "1.0.0",
+  "publisher": "your-publisher-name",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vb000/vscode-remote-debug-server"
+  },
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Debuggers",
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Remote Debug Server",
+      "properties": {
+        "remoteDebugServer.port": {
+          "type": "number",
+          "default": 9999,
+          "description": "Port to listen on for remote debug server"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "package": "vsce package --allow-missing-repository"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.22.0"
+  }
+}
